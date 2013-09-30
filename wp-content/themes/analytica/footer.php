@@ -11,11 +11,8 @@
 		</div><!-- #content -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="site-info">
-				<?php do_action( 'analytica_credits' ); ?>
-				<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'analytica' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by %2$s.', 'analytica' ), 'Analytica', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<div class="site-info clearfix">
+				<p class="pull-right">Copyright © 2013 <a href="<?php echo site_url(); ?>">Analytica Ltd</a> | ABN 12 006 464 866</p>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!--/.container-->

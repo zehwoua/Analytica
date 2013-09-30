@@ -57,56 +57,163 @@
 /* TRIPLE BORDERS */
 /********** GENERAL STYLES **********/
 /* line 4, ../sass/main.scss */
+body {
+  color: #58595B;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+/* line 10, ../sass/main.scss */
+a {
+  color: #031F73;
+  text-decoration: none;
+}
+/* line 13, ../sass/main.scss */
+a:hover, a:visited {
+  color: #EC1C24;
+}
+
+/* line 17, ../sass/main.scss */
 .container {
   background: #FFFFFF;
   margin: 0 auto;
   width: 750px;
 }
 
-/* line 10, ../sass/main.scss */
+/* line 23, ../sass/main.scss */
 .pull-right {
   float: right !important;
 }
 
-/* line 13, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 .text-center {
   text-align: center !important;
 }
 
-/* line 16, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 .pull-left {
   float: left !important;
 }
 
-/* line 20, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
 }
 
-/* line 25, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 29, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
 }
 
-/* line 34, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .clearfix:after {
   clear: both;
+}
+
+/* line 51, ../sass/main.scss */
+h1 {
+  line-height: 24px;
+  font-size: 16px;
+  color: #031F73;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* line 60, ../sass/main.scss */
+h2 {
+  line-height: 18px;
+  font-size: 14px;
+  color: #031F73;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 /********** HEADER **********/
-/* line 40, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 header .site-branding {
   background: #031f73;
   padding: 6em 0 2em 0;
 }
-/* line 43, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 header .site-branding #logo {
   margin-right: 24px;
+}
+
+/********** SITE NAVIGATION **********/
+/* line 82, ../sass/main.scss */
+#site-navigation {
+  margin-top: 15px;
+}
+/* line 85, ../sass/main.scss */
+#site-navigation ul li {
+  width: 16.6666667%;
+}
+/* line 88, ../sass/main.scss */
+#site-navigation ul li a span {
+  display: block;
+  background: #031F73;
+  color: white;
+  font-weight: bold;
+}
+/* line 94, ../sass/main.scss */
+#site-navigation ul li a .nav-thumb {
+  position: relative;
+  margin-top: 15px;
+}
+/* line 97, ../sass/main.scss */
+#site-navigation ul li a .nav-thumb .nav_hover_thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 104, ../sass/main.scss */
+#site-navigation ul li a .nav-thumb .nav_first_thumb {
+  position: relative;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 110, ../sass/main.scss */
+#site-navigation ul li a:hover span {
+  background: #EC1C24;
+  color: white;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 115, ../sass/main.scss */
+#site-navigation ul li a:hover .nav_first_thumb {
+  opacity: 0;
+}
+/* line 118, ../sass/main.scss */
+#site-navigation ul li a:hover .nav_hover_thumb {
+  opacity: 1;
+}
+
+/********** FOOTER **********/
+/* line 128, ../sass/main.scss */
+.site-footer {
+  padding-top: 0.5em;
+  border-top: 5px solid #031F73;
+  margin-top: 2em;
 }

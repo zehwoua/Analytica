@@ -31,10 +31,64 @@
 			</div>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<h1 class="menu-toggle"><?php _e( 'Menu', 'analytica' ); ?></h1>
-				<div class="screen-reader-text skip-link"><a href="#content"><?php _e( 'Skip to content', 'analytica' ); ?></a></div>
+				<ul>
+					<li>
+						<a href="" class="clearfix">
+							<span class="text-center">Home</span>
+							<div class="nav-thumb">
+								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/1.jpg">
+								<img class="nav_hover_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/1a.jpg">
+							</div><!--/nav-thumb-->
+						</a>
+					</li>
+					<li>
+						<a href="" class="clearfix">
+							<span class="text-center">About Us</span>
+							<div class="nav-thumb">
+								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/2.jpg">
+								<img class="nav_hover_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/2a.jpg">
+							</div><!--/nav-thumb-->
+						</a>
+					</li>
+					<li>
+						<a href="" class="clearfix">
+							<span class="text-center">People</span>
+							<div class="nav-thumb">
+								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/3.jpg">
+								<img class="nav_hover_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/3a.jpg">
+							</div><!--/nav-thumb-->
+						</a>
+					</li>
+					<li>
+						<a href="" class="clearfix">
+							<span class="text-center">Products</span>
+							<div class="nav-thumb">
+								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/4.jpg">
+								<img class="nav_hover_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/4a.jpg">
+							</div><!--/nav-thumb-->
+						</a>
+					</li>
+					<li>
+						<a href="" class="clearfix">
+							<span class="text-center">Releases</span>
+							<div class="nav-thumb">
+								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/5.jpg">
+								<img class="nav_hover_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/5a.jpg">
+							</div><!--/nav-thumb-->
+						</a>
+					</li>
+					<li>
+						<a href="" class="clearfix">
+							<span class="text-center">Contact Us</span>
+							<div class="nav-thumb">
+								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/6.jpg">
+								<img class="nav_hover_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/6a.jpg">
+							</div><!--/nav-thumb-->
+						</a>
+					</li>
+				</ul>
 
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 

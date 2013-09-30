@@ -140,3 +140,21 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/* CUSTOM POST TYPES */
+
+add_action( 'init', 'create_post_type_news' );
+function create_post_type_news() {
+  register_post_type( 'analytica-releases',
+    array(
+      'labels' => array(
+        'name' => __( 'Releases' ),
+        'singular_name' => __( 'Release' )
+      ),
+      'public' => true,
+      'has_archive' =>true,
+      'rewrite' => array('slug' => 'releases'),
+      'supports' => array('title','editor','author','thumbnail','excerpt','comments','custom-fields','revisions'),
+      'taxonomies' => array('category', 'post_tag') // this is IMPORTANT
+    ));
+}

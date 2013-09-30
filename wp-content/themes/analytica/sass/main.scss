@@ -1,0 +1,47 @@
+@import "css3-mixins";
+
+/********** GENERAL STYLES **********/
+.container{
+	background: #FFFFFF;
+	margin: 0 auto;
+	width: 750px;
+}
+
+.pull-right{
+	float: right!important;
+}
+.text-center{
+	text-align: center !important;
+}
+.pull-left{
+	float: left !important;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/********** HEADER **********/
+header{
+	.site-branding{
+		background:#031f73;
+		padding: 6em 0 2em 0;
+		#logo{
+			margin-right: 24px;
+		}
+	}
+}

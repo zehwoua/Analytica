@@ -8,7 +8,7 @@ Template Name: Home page template
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main main_with_sidebar pull-left" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -34,7 +34,48 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+		<div id="panel" class="clearfix pull-right">
+			<div class="inner">
+				<h1>Recent News</h1>
+				<div class="clearfix" id="home-susbcribe">
+					<a href="http://eepurl.com/xVl2n" class="clearfix">
+						<img src="<?php echo get_template_directory_uri();?>/images/envelope.gif" title="subscribe email list" alt="subscribe email list" class="pull-left">
+						<span class="text-center text-bold pull-left">Subscribe to our announcement email list</span>
+					</a>
+				</div>
+				<p class="blue text-bold">...or Like Us on facebook</p>
+				<iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FAnalyticaMedical&amp;send=false&amp;layout=button_count&amp;width=192&amp;show_faces=false&amp;font=verdana&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:192px; height:21px;" allowTransparency="true"></iframe>
+				<?php
+					$type = 'analytica-releases';
+					$args=array(
+					  'post_type' => $type,
+					  'post_status' => 'publish',
+					  'posts_per_page' => 6,
+					  'ignore_sticky_posts' => 1);
+				?>
+				<?php
+					$my_query = null;
+					$my_query = new WP_Query($args);
+				if( $my_query->have_posts() ) { ?>
+				<ul id="latest-releases-list">
+				<?php  while ($my_query->have_posts()) : $my_query->the_post(); ?>
+				    <li>
+				    	<p class="blue text-bold news_title"><?php the_title(); ?></p>
+				    	<span class="red"><?php the_time('d F Y'); ?></span>
+				    	<?php the_content(); ?>
+				    </li>
+				    <?php
+				  endwhile; ?>
+				  	<li class="rss">
+				  		<a href="rss2feed.xml" class="clearfix">
+				  			<img src="<?php echo get_template_directory_uri();?>/images/rss.gif" title="rss feed of releases" alt="rss feed of releases" class="pull-left">
+				  			<span class="">Announcements are also available as an RSS feed</span>
+				  		</a>	
+				  	</li>
+				</ul>
+				<?php } ?>
+			</div>
+		</div>
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

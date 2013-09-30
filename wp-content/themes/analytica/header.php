@@ -33,7 +33,7 @@
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<ul>
 					<li>
-						<a href="" class="clearfix">
+						<a href="<?php echo site_url(); ?>" class="clearfix">
 							<span class="text-center">Home</span>
 							<div class="nav-thumb">
 								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/1.jpg">
@@ -42,7 +42,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="" class="clearfix">
+						<a href="<?php echo site_url(); ?>/about-us/" class="clearfix">
 							<span class="text-center">About Us</span>
 							<div class="nav-thumb">
 								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/2.jpg">
@@ -51,7 +51,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="" class="clearfix">
+						<a href="<?php echo site_url(); ?>/people/" class="clearfix">
 							<span class="text-center">People</span>
 							<div class="nav-thumb">
 								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/3.jpg">
@@ -60,7 +60,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="" class="clearfix">
+						<a href="<?php echo site_url(); ?>/products/" class="clearfix">
 							<span class="text-center">Products</span>
 							<div class="nav-thumb">
 								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/4.jpg">
@@ -69,7 +69,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="" class="clearfix">
+						<a href="<?php echo site_url(); ?>/releases/" class="clearfix">
 							<span class="text-center">Releases</span>
 							<div class="nav-thumb">
 								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/5.jpg">
@@ -78,7 +78,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="" class="clearfix">
+						<a href="<?php echo site_url(); ?>/contact-us/" class="clearfix">
 							<span class="text-center">Contact Us</span>
 							<div class="nav-thumb">
 								<img class="nav_first_thumb" src="<?php echo get_template_directory_uri(); ?>/images/nav/6.jpg">

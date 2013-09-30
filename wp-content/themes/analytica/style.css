@@ -123,7 +123,7 @@ hr {
 
 /* Text elements */
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 8px;
 }
 ul, ol {
 	margin: 0 0 1.5em 3em;

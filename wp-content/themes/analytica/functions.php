@@ -5,6 +5,10 @@
  * @package Analytica
  */
 
+
+//Add feautured image
+add_theme_support( 'post-thumbnails');
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -141,20 +145,137 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+/**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/inc/metabox.php';
+
 /* CUSTOM POST TYPES */
 
-add_action( 'init', 'create_post_type_news' );
-function create_post_type_news() {
-  register_post_type( 'analytica-releases',
-    array(
-      'labels' => array(
-        'name' => __( 'Releases' ),
-        'singular_name' => __( 'Release' )
-      ),
-      'public' => true,
-      'has_archive' =>true,
-      'rewrite' => array('slug' => 'releases'),
-      'supports' => array('title','editor','author','thumbnail','excerpt','comments','custom-fields','revisions'),
-      'taxonomies' => array('category', 'post_tag') // this is IMPORTANT
-    ));
+// Custom Post type
+function my_custom_post_release() {
+	$labels = array(
+		'name'               => _x( 'Releases', 'post type general name' ),
+		'singular_name'      => _x( 'Release', 'post type singular name' ),
+		'add_new'            => _x( 'Add New', 'book' ),
+		'add_new_item'       => __( 'Add New Release' ),
+		'edit_item'          => __( 'Edit Release' ),
+		'new_item'           => __( 'New Release' ),
+		'all_items'          => __( 'All Releases' ),
+		'view_item'          => __( 'View Release' ),
+		'search_items'       => __( 'Search Releases' ),
+		'not_found'          => __( 'No releases found' ),
+		'not_found_in_trash' => __( 'No releases found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Releases'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our releases and release specific data',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'categories' ),
+		'rewrite' => array('slug' => 'releases', 'with_front' => true),
+		'has_archive'   => true
+	);
+	register_post_type( 'analytica_releases', $args );
+	flush_rewrite_rules( false );	
 }
+add_action( 'init', 'my_custom_post_release' );
+
+// PEOPLE CUSTOM POST TYPE
+
+function my_custom_post_people() {
+	$labels = array(
+		'name'               => _x( 'People', 'post type general name' ),
+		'singular_name'      => _x( 'Person', 'post type singular name' ),
+		'add_new'            => _x( 'Add New', 'book' ),
+		'add_new_item'       => __( 'Add New Person' ),
+		'edit_item'          => __( 'Edit Person' ),
+		'new_item'           => __( 'New Person' ),
+		'all_items'          => __( 'All People' ),
+		'view_item'          => __( 'View Person' ),
+		'search_items'       => __( 'Search People' ),
+		'not_found'          => __( 'No people found' ),
+		'not_found_in_trash' => __( 'No people found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'People'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our people and persons specific data',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'categories' ),
+		'rewrite' => array('slug' => 'people', 'with_front' => true),
+		'has_archive'   => true
+	);
+	register_post_type( 'analytica_people', $args );	
+	flush_rewrite_rules( false );
+}
+add_action( 'init', 'my_custom_post_people' );
+
+// PRODUCTS CUSTOM POST TYPE
+
+function my_custom_post_product() {
+	$labels = array(
+		'name'               => _x( 'Products', 'post type general name' ),
+		'singular_name'      => _x( 'Product', 'post type singular name' ),
+		'add_new'            => _x( 'Add New', 'book' ),
+		'add_new_item'       => __( 'Add New Product' ),
+		'edit_item'          => __( 'Edit Product' ),
+		'new_item'           => __( 'New Product' ),
+		'all_items'          => __( 'All Products' ),
+		'view_item'          => __( 'View Product' ),
+		'search_items'       => __( 'Search Products' ),
+		'not_found'          => __( 'No product found' ),
+		'not_found_in_trash' => __( 'No product found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Products'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our products and product specific data',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'categories' ),
+		'rewrite' => array('slug' => 'products', 'with_front' => true),
+		'has_archive'   => true
+	);
+	register_post_type( 'analytica_products', $args );	
+	flush_rewrite_rules( false );
+}
+add_action( 'init', 'my_custom_post_product' );
+
+
+// BUSINESS CARDS CUSTOM POST TYPE
+
+function my_custom_post_buscards() {
+	$labels = array(
+		'name'               => _x( 'Business Cards', 'post type general name' ),
+		'singular_name'      => _x( 'Business Cards', 'post type singular name' ),
+		'add_new'            => _x( 'Add New', 'book' ),
+		'add_new_item'       => __( 'Add New Business Card' ),
+		'edit_item'          => __( 'Edit Business Card' ),
+		'new_item'           => __( 'New Business Card' ),
+		'all_items'          => __( 'All Products' ),
+		'view_item'          => __( 'View Business Card' ),
+		'search_items'       => __( 'Search Business Card' ),
+		'not_found'          => __( 'No business card found' ),
+		'not_found_in_trash' => __( 'No business card found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Business Cards'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our business cards and business card specific data',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'categories' ),
+		'rewrite' => array('slug' => 'buscards', 'with_front' => true),
+		'has_archive'   => true
+	);
+	register_post_type( 'analytica_buscards', $args );	
+	flush_rewrite_rules( false );
+}
+add_action( 'init', 'my_custom_post_buscards' );

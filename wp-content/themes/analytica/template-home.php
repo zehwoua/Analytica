@@ -46,7 +46,7 @@ get_header(); ?>
 				<p class="blue text-bold">...or Like Us on facebook</p>
 				<iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FAnalyticaMedical&amp;send=false&amp;layout=button_count&amp;width=192&amp;show_faces=false&amp;font=verdana&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:192px; height:21px;" allowTransparency="true"></iframe>
 				<?php
-					$type = 'analytica-releases';
+					$type = 'analytica_releases';
 					$args=array(
 					  'post_type' => $type,
 					  'post_status' => 'publish',
@@ -63,6 +63,8 @@ get_header(); ?>
 				    	<p class="blue text-bold news_title"><?php the_title(); ?></p>
 				    	<span class="red"><?php the_time('d F Y'); ?></span>
 				    	<?php the_content(); ?>
+				    	<span class="clearfix attachment"><a class="pull-right" href="<?php echo get_post_meta( get_the_ID(), 'analytica_url', true ); ?>" target="blank"><?php echo get_post_meta( get_the_ID(), 'analytica_attachment', true ); ?></a></span>
+
 				    </li>
 				    <?php
 				  endwhile; ?>

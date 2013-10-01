@@ -79,25 +79,47 @@ $meta_boxes[] = array(
 		
 		array(
 			// Field name - Will be used as label
-			'name'  => __( 'Attachement', 'rwmb' ),
+			'name'  => __( 'Attachement 1', 'rwmb' ),
 			// Field ID, i.e. the meta key
-			'id'    => "{$prefix}attachment",
+			'id'    => "{$prefix}attachment1",
 			// Field description (optional)
 			'desc'  => __( 'Please write attachment name', 'rwmb' ),
 			'type'  => 'text',
 			// Default value (optional)
-			'std'   => __( 'download', 'rwmb' ),
+			'std'   => __( 'Download', 'rwmb' ),
 			// CLONES: Add to make the field cloneable (i.e. have multiple value)
 			'clone' => false,
 		),
 		
 			// URL
 		array(
-			'name'  => __( 'URL', 'rwmb' ),
-			'id'    => "{$prefix}url",
+			'name'  => __( 'URL 1', 'rwmb' ),
+			'id'    => "{$prefix}url1",
 			'desc'  => __( 'Please insert the attachments url', 'rwmb' ),
 			'type'  => 'url',
 			'std'   => 'http://google.com',
+		),
+		array(
+			// Field name - Will be used as label
+			'name'  => __( 'Attachement 2', 'rwmb' ),
+			// Field ID, i.e. the meta key
+			'id'    => "{$prefix}attachment2",
+			// Field description (optional)
+			'desc'  => __( 'Please write attachment name', 'rwmb' ),
+			'type'  => 'text',
+			// Default value (optional)
+			'std'   => __( '', 'rwmb' ),
+			// CLONES: Add to make the field cloneable (i.e. have multiple value)
+			'clone' => false,
+		),
+		
+			// URL
+		array(
+			'name'  => __( 'URL 2', 'rwmb' ),
+			'id'    => "{$prefix}url2",
+			'desc'  => __( 'Please insert the attachments url', 'rwmb' ),
+			'type'  => 'url',
+			'std'   => '',
 		),
 		
 
@@ -184,6 +206,19 @@ $meta_boxes[] = array(
 			'clone' => false,
 		),
 		array(
+			// Field name - Will be used as label
+			'name'  => __( 'Skype', 'rwmb' ),
+			// Field ID, i.e. the meta key
+			'id'    => "{$prefix}skype",
+			// Field description (optional)
+			'desc'  => __( 'Please enter the persons skype', 'rwmb' ),
+			'type'  => 'text',
+			// Default value (optional)
+			'std'   => __( 'skype username', 'rwmb' ),
+			// CLONES: Add to make the field cloneable (i.e. have multiple value)
+			'clone' => false,
+		),
+		array(
 			'name'  => __( 'Linkedin URL', 'rwmb' ),
 			'id'    => "{$prefix}linkedin",
 			'desc'  => __( 'Please insert the linkedin url', 'rwmb' ),
@@ -202,6 +237,18 @@ $meta_boxes[] = array(
 			'type' => 'heading',
 			'name' => __( 'Company Info', 'rwmb' ),
 			'id'   => 'company_info_id', // Not used but needed for plugin
+		),
+		array(
+			// Field name - Will be used as label
+			'name'  => __( 'Company Name', 'rwmb' ),
+			// Field ID, i.e. the meta key
+			'id'    => "{$prefix}company_name",
+			// Field description (optional)
+			'desc'  => __( 'Company Name', 'rwmb' ),
+			'type'  => 'text',
+			// Default value (optional)
+			'std'   => __( 'Analytica Ltd', 'rwmb' )
+			// CLONES: Add to make the field cloneable (i.e. have multiple value)
 		),
 		array(
 			'name'  => __( 'Company URL', 'rwmb' ),
@@ -252,7 +299,7 @@ $meta_boxes[] = array(
 		array(
 			'name'  => __( 'ASX Stock Ticker', 'rwmb' ),
 			'id'    => "{$prefix}stock",
-			'desc'  => __( 'Please company stock ticker url', 'rwmb' ),
+			'desc'  => __( 'Please insert company stock ticker url', 'rwmb' ),
 			'type'  => 'url',
 			'std'   => 'http://www.asx.com.au/asx/research/companyInfo.do?by=asxCode&asxCode=ALT',
 		),

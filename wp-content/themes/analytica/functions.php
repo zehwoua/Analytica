@@ -258,7 +258,7 @@ function my_custom_post_buscards() {
 		'add_new_item'       => __( 'Add New Business Card' ),
 		'edit_item'          => __( 'Edit Business Card' ),
 		'new_item'           => __( 'New Business Card' ),
-		'all_items'          => __( 'All Products' ),
+		'all_items'          => __( 'All Business Cards' ),
 		'view_item'          => __( 'View Business Card' ),
 		'search_items'       => __( 'Search Business Card' ),
 		'not_found'          => __( 'No business card found' ),
@@ -279,3 +279,12 @@ function my_custom_post_buscards() {
 	flush_rewrite_rules( false );
 }
 add_action( 'init', 'my_custom_post_buscards' );
+
+
+// ALLOW VCF extension files to be uploaded 
+add_filter('upload_mimes', 'custom_upload_mimes');
+function custom_upload_mimes ( $existing_mimes=array() ) {
+	// add your extension to the array
+	$existing_mimes['vcf'] = 'text/x-vcard';
+	return $existing_mimes;
+}

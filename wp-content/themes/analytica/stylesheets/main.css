@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Merriweather+Sans");
 /* -------------------------------------------------------------
   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
   By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
@@ -56,7 +57,7 @@
 /* TRANSITION */
 /* TRIPLE BORDERS */
 /********** GENERAL STYLES **********/
-/* line 4, ../sass/main.scss */
+/* line 5, ../sass/main.scss */
 body {
   color: #58595B;
   font-family: Verdana,Arial,Helvetica,sans-serif;
@@ -64,61 +65,61 @@ body {
   font-size: 12px;
 }
 
-/* line 10, ../sass/main.scss */
+/* line 11, ../sass/main.scss */
 a {
   color: #031F73;
   text-decoration: none;
 }
-/* line 13, ../sass/main.scss */
+/* line 14, ../sass/main.scss */
 a:hover, a:visited {
   color: #EC1C24;
 }
 
-/* line 17, ../sass/main.scss */
+/* line 18, ../sass/main.scss */
 .container {
   background: #FFFFFF;
   margin: 0 auto;
   width: 750px;
 }
 
-/* line 23, ../sass/main.scss */
+/* line 24, ../sass/main.scss */
 .pull-right {
   float: right !important;
 }
 
-/* line 26, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 .text-center {
   text-align: center !important;
 }
 
-/* line 29, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 .pull-left {
   float: left !important;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
 }
 
-/* line 38, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
 }
 
-/* line 47, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 h1 {
   line-height: 24px;
   font-size: 16px;
@@ -128,7 +129,7 @@ h1 {
   padding-bottom: 12px;
 }
 
-/* line 60, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 h2 {
   line-height: 18px;
   font-size: 14px;
@@ -138,7 +139,7 @@ h2 {
   padding-bottom: 12px;
 }
 
-/* line 69, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 h3 {
   line-height: 18px;
   font-size: 13px;
@@ -148,38 +149,38 @@ h3 {
   padding-bottom: 8px;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 .inner {
   padding: 16px;
 }
 
-/* line 81, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 .blue {
   color: #031F73;
 }
 
-/* line 84, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 .red {
   color: #EC1C24;
 }
 
-/* line 87, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 .text-bold {
   font-weight: bold;
 }
 
 /********** HEADER **********/
-/* line 93, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 header .site-branding {
   background: #031f73;
   padding: 6em 0 2em 0;
 }
-/* line 96, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 header .site-branding #logo {
   margin-right: 24px;
 }
 
-/* line 104, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 .page-template-template-autostart_index-php,
 .page-template-template-autostart_videos-php,
 .page-template-template-autostart_distributors-php,
@@ -189,14 +190,14 @@ header .site-branding #logo {
   line-height: 18px;
   font-size: 12px;
 }
-/* line 109, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .page-template-template-autostart_index-php header,
 .page-template-template-autostart_videos-php header,
 .page-template-template-autostart_distributors-php header,
 .page-template-template-autostart_technical-php header {
   display: none;
 }
-/* line 112, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .page-template-template-autostart_index-php #autostart_header,
 .page-template-template-autostart_videos-php #autostart_header,
 .page-template-template-autostart_distributors-php #autostart_header,
@@ -204,7 +205,7 @@ header .site-branding #logo {
   margin-top: 20px;
   margin-bottom: 2em;
 }
-/* line 116, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .page-template-template-autostart_index-php #autostart_header #autostart_nav ul,
 .page-template-template-autostart_videos-php #autostart_header #autostart_nav ul,
 .page-template-template-autostart_distributors-php #autostart_header #autostart_nav ul,
@@ -212,7 +213,7 @@ header .site-branding #logo {
   margin: 20px 0 0 0;
   padding: 0;
 }
-/* line 119, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .page-template-template-autostart_index-php #autostart_header #autostart_nav ul li,
 .page-template-template-autostart_videos-php #autostart_header #autostart_nav ul li,
 .page-template-template-autostart_distributors-php #autostart_header #autostart_nav ul li,
@@ -221,7 +222,7 @@ header .site-branding #logo {
   list-style-type: none;
   float: left;
 }
-/* line 123, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 .page-template-template-autostart_index-php #autostart_header #autostart_nav ul li a,
 .page-template-template-autostart_videos-php #autostart_header #autostart_nav ul li a,
 .page-template-template-autostart_distributors-php #autostart_header #autostart_nav ul li a,
@@ -234,7 +235,7 @@ header .site-branding #logo {
   padding: 2px 0;
   font-size: 12px;
 }
-/* line 136, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 .page-template-template-autostart_index-php .as_videos,
 .page-template-template-autostart_videos-php .as_videos,
 .page-template-template-autostart_distributors-php .as_videos,
@@ -243,27 +244,27 @@ header .site-branding #logo {
 }
 
 /********** SITE NAVIGATION **********/
-/* line 142, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 #site-navigation {
   margin-top: 15px;
 }
-/* line 145, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 #site-navigation ul li {
   width: 16.6666667%;
 }
-/* line 148, ../sass/main.scss */
+/* line 149, ../sass/main.scss */
 #site-navigation ul li a span {
   display: block;
   background: #031F73;
   color: white;
   font-weight: bold;
 }
-/* line 154, ../sass/main.scss */
+/* line 155, ../sass/main.scss */
 #site-navigation ul li a .nav-thumb {
   position: relative;
   margin-top: 15px;
 }
-/* line 157, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 #site-navigation ul li a .nav-thumb .nav_hover_thumb {
   position: absolute;
   top: 0;
@@ -275,7 +276,7 @@ header .site-branding #logo {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 164, ../sass/main.scss */
+/* line 165, ../sass/main.scss */
 #site-navigation ul li a .nav-thumb .nav_first_thumb {
   position: relative;
   -moz-transition: all 0.5s ease-in-out;
@@ -284,7 +285,7 @@ header .site-branding #logo {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 170, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 #site-navigation ul li a:hover span {
   background: #EC1C24;
   color: white;
@@ -294,77 +295,111 @@ header .site-branding #logo {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 175, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 #site-navigation ul li a:hover .nav_first_thumb {
   opacity: 0;
 }
-/* line 178, ../sass/main.scss */
+/* line 179, ../sass/main.scss */
 #site-navigation ul li a:hover .nav_hover_thumb {
   opacity: 1;
 }
 
+/* line 193, ../sass/main.scss */
+body.home #site-navigation li.home span,
+body.page-template-template-about-us-php #site-navigation li.about-us span,
+body.post-type-archive-analytica_people #site-navigation li.people span,
+body.post-type-archive-analytica_products #site-navigation li.products span,
+body.post-type-archive-analytica_releases #site-navigation li.releases span,
+body.page-template-template-contact-us-php #site-navigation li.contact-us span {
+  background: #EC1C24;
+  color: white;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 198, ../sass/main.scss */
+body.home #site-navigation li.home .nav_first_thumb,
+body.page-template-template-about-us-php #site-navigation li.about-us .nav_first_thumb,
+body.post-type-archive-analytica_people #site-navigation li.people .nav_first_thumb,
+body.post-type-archive-analytica_products #site-navigation li.products .nav_first_thumb,
+body.post-type-archive-analytica_releases #site-navigation li.releases .nav_first_thumb,
+body.page-template-template-contact-us-php #site-navigation li.contact-us .nav_first_thumb {
+  opacity: 0;
+}
+/* line 201, ../sass/main.scss */
+body.home #site-navigation li.home .nav_hover_thumb,
+body.page-template-template-about-us-php #site-navigation li.about-us .nav_hover_thumb,
+body.post-type-archive-analytica_people #site-navigation li.people .nav_hover_thumb,
+body.post-type-archive-analytica_products #site-navigation li.products .nav_hover_thumb,
+body.post-type-archive-analytica_releases #site-navigation li.releases .nav_hover_thumb,
+body.page-template-template-contact-us-php #site-navigation li.contact-us .nav_hover_thumb {
+  opacity: 1;
+}
+
 /********** CONTENT **********/
-/* line 190, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 #content .site-main.main_with_sidebar {
   width: 500px;
 }
 
-/* line 195, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
 #panel {
   width: 232px;
   background: #F1F1F7;
   margin-top: 28px;
 }
-/* line 199, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 #panel h1 {
   padding-top: 0;
 }
-/* line 202, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 #panel #home-susbcribe {
   margin-bottom: 20px;
 }
-/* line 204, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 #panel #home-susbcribe img {
   width: 30%;
   margin-right: 5%;
 }
-/* line 208, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 #panel #home-susbcribe span {
   display: block;
   width: 65%;
 }
-/* line 213, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 #panel #latest-releases-list {
   margin-left: 0;
   margin-top: 20px;
 }
-/* line 216, ../sass/main.scss */
+/* line 234, ../sass/main.scss */
 #panel #latest-releases-list li {
   list-style-type: none;
   border-top: 3px solid #031F73;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-/* line 221, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 #panel #latest-releases-list li .news_title {
   margin-bottom: 0;
 }
-/* line 224, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 #panel #latest-releases-list li .attachment {
   margin-top: 0.5em;
   display: block;
 }
-/* line 226, ../sass/main.scss */
+/* line 244, ../sass/main.scss */
 #panel #latest-releases-list li.rss img {
   margin-right: 10px;
   padding-top: 6px;
 }
-/* line 233, ../sass/main.scss */
+/* line 251, ../sass/main.scss */
 #panel.release_years {
   color: white;
   background: none;
 }
-/* line 236, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 #panel.release_years h4 {
   padding-left: 32px;
   padding-top: 2px;
@@ -373,77 +408,87 @@ header .site-branding #logo {
   margin-bottom: 2px;
   background: #BCBEC0;
 }
-/* line 243, ../sass/main.scss */
+/* line 261, ../sass/main.scss */
 #panel.release_years h4 a {
   display: block;
 }
-/* line 245, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
 #panel.release_years h4 a:visited {
   color: white;
 }
-/* line 248, ../sass/main.scss */
+/* line 266, ../sass/main.scss */
 #panel.release_years h4 a:hover {
   opacity: 0.6;
 }
-/* line 252, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 #panel.release_years h4.active {
   background: #031F73;
 }
-/* line 258, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 #panel.release_years.english .english, #panel.release_years.portuguese .portuguese, #panel.release_years.mandarin .mandarin {
   background: #031F73;
 }
-/* line 262, ../sass/main.scss */
+/* line 280, ../sass/main.scss */
 #panel.autostart {
   background: none;
 }
 
-/* line 266, ../sass/main.scss */
+/* line 284, ../sass/main.scss */
 #people, #products {
   margin-top: 3em;
 }
-/* line 268, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 #people .person, #products .person {
   border-bottom: 1px solid #999;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
 
-/* line 274, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 #releases {
   margin-top: 3em;
 }
-/* line 276, ../sass/main.scss */
+/* line 294, ../sass/main.scss */
 #releases .release {
   background: #F1F1F7;
   margin-bottom: 1em;
 }
-/* line 279, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 #releases .release .attachment {
-  margin-top: 1em;
+  margin-bottom: 0;
   display: block;
 }
 
-/* line 287, ../sass/main.scss */
+/* line 305, ../sass/main.scss */
 .page-template-template-autostart_technical-php #main ul {
   margin: 0;
   border-top: 3px solid #d52b1e;
   padding-top: 1em;
 }
-/* line 291, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 .page-template-template-autostart_technical-php #main ul li {
   list-style-type: none;
   border-bottom: 3px solid #d52b1e;
   padding-bottom: 2em;
   margin-bottom: 2em;
 }
-/* line 296, ../sass/main.scss */
+/* line 314, ../sass/main.scss */
 .page-template-template-autostart_technical-php #main ul li img {
   border: 1px solid #d52b1e;
 }
 
+/* line 323, ../sass/main.scss */
+.single-analytica_buscards table td {
+  vertical-align: middle;
+  padding-bottom: 1em;
+}
+/* line 327, ../sass/main.scss */
+.single-analytica_buscards table .first_row {
+  width: 120px;
+}
+
 /********** FOOTER **********/
-/* line 305, ../sass/main.scss */
+/* line 334, ../sass/main.scss */
 .site-footer {
   padding-top: 0.5em;
   border-top: 5px solid #031F73;

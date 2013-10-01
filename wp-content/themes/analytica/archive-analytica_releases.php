@@ -6,19 +6,27 @@
 		$published_year =  get_the_time('Y');
 	}
 ?>
+<?php
+	$type = 'analytica_releases';
+	$a = array(
+		'post_type' => $type,
+		'posts_per_page' => -1);
+	$q = null;
+	$q = new WP_Query($a);
+?>
 <div id="primary" class="content-area">
 	<div id="panel" class=" release_years pull-left">
 		<?php $oldyear = $postyear = get_the_time('Y', $post->ID); ?>
 		<h4 class="<?php if ($published_year === $postyear) echo "active" ?>"><a href="<?php echo home_url(); ?>/releases/"><?php echo $postyear; ?></a></h4>
-		<?php while (have_posts()) {
-		  	the_post();
+		<?php while ($q->have_posts()) : $q->the_post();
 		  	$postyear = get_the_time('Y', $post->ID);
+
 		  	if ($oldyear != $postyear) {
-		    	$oldyear = $postyear; ?>
-		    	
+		    	$oldyear = $postyear; 
+		    	?>
 		    	<h4 class="<?php if ($published_year === $postyear) echo "active" ?>"><a href="<?php echo add_query_arg( 'release_year', $postyear, home_url().'/releases' )?>"><?php echo $postyear; ?></a></h4>
 			<?php } ?>
-		<?php } ?>
+		<?php endwhile; ?>
 	</div>
 		<main id="releases" class="site-main main_with_sidebar pull-right" role="main">
 			<a href="http://eepurl.com/xVl2n">
@@ -28,7 +36,6 @@
 			<?php $year =  get_the_time('Y');?>
 			<h1>Company Announcements - <?php echo $published_year; ?></h1>
 			<?php
-				$type = 'analytica_releases';
 				$args = array(
 					'post_type' => $type,
 					'year'  => $published_year,
@@ -46,7 +53,14 @@
 							<p class="blue text-bold"><?php the_title(); ?></p>
 							<span class="red"><?php the_time('d F Y'); ?></span>
 							<?php the_content(); ?>
-							<span class="clearfix attachment"><a class="pull-right" href="<?php echo get_post_meta( get_the_ID(), 'analytica_url', true ); ?>" target="blank"><?php echo get_post_meta( get_the_ID(), 'analytica_attachment', true ); ?></a></span>
+							<p class="clearfix attachment">
+								<a class="pull-right" href="<?php echo get_post_meta( get_the_ID(), 'analytica_url1', true ); ?>" target="blank"><?php echo get_post_meta( get_the_ID(), 'analytica_attachment1', true ); ?></a>
+							</p>
+							<?php if(get_post_meta( get_the_ID(), 'analytica_url2') && (get_post_meta( get_the_ID(), 'analytica_attachment2'))){ ?>
+						    	<p class="clearfix attachment">
+						    		<a class="pull-right" href="<?php echo get_post_meta( get_the_ID(), 'analytica_url2', true ); ?>" target="blank"><?php echo get_post_meta( get_the_ID(), 'analytica_attachment2', true ); ?></a>
+						    	</p>
+				    	<?php } ?>
 						</div><!--/inner-->
 					</div><!--/person-->
 				    <?php

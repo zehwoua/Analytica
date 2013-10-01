@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Geoff Daly
+N:Daly;Geoff;;;
+EMAIL;TYPE=INTERNET:gdaly@analyticamedical.com
+X-SKYPE:geoffdaly
+TEL;TYPE=WORK:+61732781950
+TEL;TYPE=CELL:+61410302408
+item1.TEL:+61731021991
+item1.X-ABLabel:Skype
+ADR;TYPE=WORK:GPO Box 670;;;Brisbane;Queensland;4001;AUSTRALIA
+ORG:Analytica Ltd
+TITLE:Operations Manager
+URL;TYPE=WORK:www.analyticamedical.com
+END:VCARD

@@ -32,7 +32,7 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<ul>
-					<li>
+					<li class="home">
 						<a href="<?php echo site_url(); ?>" class="clearfix">
 							<span class="text-center">Home</span>
 							<div class="nav-thumb">
@@ -41,7 +41,7 @@
 							</div><!--/nav-thumb-->
 						</a>
 					</li>
-					<li>
+					<li class="about-us">
 						<a href="<?php echo site_url(); ?>/about-us/" class="clearfix">
 							<span class="text-center">About Us</span>
 							<div class="nav-thumb">
@@ -50,7 +50,7 @@
 							</div><!--/nav-thumb-->
 						</a>
 					</li>
-					<li>
+					<li class="people">
 						<a href="<?php echo site_url(); ?>/people/" class="clearfix">
 							<span class="text-center">People</span>
 							<div class="nav-thumb">
@@ -59,7 +59,7 @@
 							</div><!--/nav-thumb-->
 						</a>
 					</li>
-					<li>
+					<li class="products">
 						<a href="<?php echo site_url(); ?>/products/" class="clearfix">
 							<span class="text-center">Products</span>
 							<div class="nav-thumb">
@@ -68,7 +68,7 @@
 							</div><!--/nav-thumb-->
 						</a>
 					</li>
-					<li>
+					<li class="releases">
 						<a href="<?php echo site_url(); ?>/releases/" class="clearfix">
 							<span class="text-center">Releases</span>
 							<div class="nav-thumb">
@@ -77,7 +77,7 @@
 							</div><!--/nav-thumb-->
 						</a>
 					</li>
-					<li>
+					<li class="contact-us">
 						<a href="<?php echo site_url(); ?>/contact-us/" class="clearfix">
 							<span class="text-center">Contact Us</span>
 							<div class="nav-thumb">

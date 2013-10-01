@@ -16,11 +16,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
+					the_content();
 				?>
 
 			<?php endwhile; ?>
@@ -63,8 +59,14 @@ get_header(); ?>
 				    	<p class="blue text-bold news_title"><?php the_title(); ?></p>
 				    	<span class="red"><?php the_time('d F Y'); ?></span>
 				    	<?php the_content(); ?>
-				    	<span class="clearfix attachment"><a class="pull-right" href="<?php echo get_post_meta( get_the_ID(), 'analytica_url', true ); ?>" target="blank"><?php echo get_post_meta( get_the_ID(), 'analytica_attachment', true ); ?></a></span>
-
+				    	<p class="clearfix attachment">
+				    		<a class="pull-right" href="<?php echo get_post_meta( get_the_ID(), 'analytica_url1', true ); ?>" target="blank"><?php echo get_post_meta( get_the_ID(), 'analytica_attachment1', true ); ?></a>
+				    	</p>
+				    	<?php if(get_post_meta( get_the_ID(), 'analytica_url2') && (get_post_meta( get_the_ID(), 'analytica_attachment2'))){ ?>
+					    	<p class="clearfix attachment">
+					    		<a class="pull-right" href="<?php echo get_post_meta( get_the_ID(), 'analytica_url2', true ); ?>" target="blank"><?php echo get_post_meta( get_the_ID(), 'analytica_attachment2', true ); ?></a>
+					    	</p>
+				    	<?php } ?>
 				    </li>
 				    <?php
 				  endwhile; ?>

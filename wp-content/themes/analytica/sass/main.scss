@@ -98,6 +98,45 @@ header{
 		}
 	}
 }
+.page-template-template-autostart_index-php,
+.page-template-template-autostart_videos-php,
+.page-template-template-autostart_distributors-php,
+.page-template-template-autostart_technical-php{
+	color: #58595B;
+	font-family: "ff-dax-web-pro",Verdana,Arial,Helvetica,sans-serif;
+	line-height: 18px;
+	font-size: 12px;
+	header{
+		display: none;
+	}
+	#autostart_header{
+		margin-top: 20px;
+		margin-bottom: 2em;
+		#autostart_nav{
+			ul{
+				margin: 20px 0 0 0;
+				padding: 0;
+				li{
+					width: 25%;
+					list-style-type: none;
+					float: left;
+					a{
+						display: block;
+						background: #031F73;
+						color: white;
+						text-align: center;
+						font-weight: bold;
+						padding: 2px 0;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+	.as_videos{
+		margin-top: 10px;
+	}
+}
 
 /********** SITE NAVIGATION **********/
 #site-navigation{
@@ -214,6 +253,14 @@ header{
 				background: #031F73;
 			}
 		}
+		&.english .english,
+		&.portuguese .portuguese,
+		&.mandarin .mandarin{
+			background: #031F73;
+		}
+	}
+	&.autostart{
+		background: none;
 	}
 }
 #people, #products{
@@ -232,6 +279,24 @@ header{
 		.attachment{
 			margin-top: 1em;
 			display: block;
+		}
+	}
+}
+.page-template-template-autostart_technical-php{
+	#main{
+		ul{
+			margin:0;
+			border-top: 3px solid rgb(213, 43, 30);
+			padding-top: 1em;
+			li{
+				list-style-type: none;
+				border-bottom: 3px solid rgb(213, 43, 30);
+				padding-bottom: 2em;
+				margin-bottom: 2em;
+				img{
+					border:1px solid rgb(213, 43, 30);
+				}
+			}
 		}
 	}
 }

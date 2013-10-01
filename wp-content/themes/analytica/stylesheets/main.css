@@ -179,28 +179,91 @@ header .site-branding #logo {
   margin-right: 24px;
 }
 
+/* line 104, ../sass/main.scss */
+.page-template-template-autostart_index-php,
+.page-template-template-autostart_videos-php,
+.page-template-template-autostart_distributors-php,
+.page-template-template-autostart_technical-php {
+  color: #58595B;
+  font-family: "ff-dax-web-pro",Verdana,Arial,Helvetica,sans-serif;
+  line-height: 18px;
+  font-size: 12px;
+}
+/* line 109, ../sass/main.scss */
+.page-template-template-autostart_index-php header,
+.page-template-template-autostart_videos-php header,
+.page-template-template-autostart_distributors-php header,
+.page-template-template-autostart_technical-php header {
+  display: none;
+}
+/* line 112, ../sass/main.scss */
+.page-template-template-autostart_index-php #autostart_header,
+.page-template-template-autostart_videos-php #autostart_header,
+.page-template-template-autostart_distributors-php #autostart_header,
+.page-template-template-autostart_technical-php #autostart_header {
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+/* line 116, ../sass/main.scss */
+.page-template-template-autostart_index-php #autostart_header #autostart_nav ul,
+.page-template-template-autostart_videos-php #autostart_header #autostart_nav ul,
+.page-template-template-autostart_distributors-php #autostart_header #autostart_nav ul,
+.page-template-template-autostart_technical-php #autostart_header #autostart_nav ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+/* line 119, ../sass/main.scss */
+.page-template-template-autostart_index-php #autostart_header #autostart_nav ul li,
+.page-template-template-autostart_videos-php #autostart_header #autostart_nav ul li,
+.page-template-template-autostart_distributors-php #autostart_header #autostart_nav ul li,
+.page-template-template-autostart_technical-php #autostart_header #autostart_nav ul li {
+  width: 25%;
+  list-style-type: none;
+  float: left;
+}
+/* line 123, ../sass/main.scss */
+.page-template-template-autostart_index-php #autostart_header #autostart_nav ul li a,
+.page-template-template-autostart_videos-php #autostart_header #autostart_nav ul li a,
+.page-template-template-autostart_distributors-php #autostart_header #autostart_nav ul li a,
+.page-template-template-autostart_technical-php #autostart_header #autostart_nav ul li a {
+  display: block;
+  background: #031F73;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 2px 0;
+  font-size: 12px;
+}
+/* line 136, ../sass/main.scss */
+.page-template-template-autostart_index-php .as_videos,
+.page-template-template-autostart_videos-php .as_videos,
+.page-template-template-autostart_distributors-php .as_videos,
+.page-template-template-autostart_technical-php .as_videos {
+  margin-top: 10px;
+}
+
 /********** SITE NAVIGATION **********/
-/* line 103, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
 #site-navigation {
   margin-top: 15px;
 }
-/* line 106, ../sass/main.scss */
+/* line 145, ../sass/main.scss */
 #site-navigation ul li {
   width: 16.6666667%;
 }
-/* line 109, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 #site-navigation ul li a span {
   display: block;
   background: #031F73;
   color: white;
   font-weight: bold;
 }
-/* line 115, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 #site-navigation ul li a .nav-thumb {
   position: relative;
   margin-top: 15px;
 }
-/* line 118, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
 #site-navigation ul li a .nav-thumb .nav_hover_thumb {
   position: absolute;
   top: 0;
@@ -212,7 +275,7 @@ header .site-branding #logo {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 125, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 #site-navigation ul li a .nav-thumb .nav_first_thumb {
   position: relative;
   -moz-transition: all 0.5s ease-in-out;
@@ -221,7 +284,7 @@ header .site-branding #logo {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 131, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 #site-navigation ul li a:hover span {
   background: #EC1C24;
   color: white;
@@ -231,77 +294,77 @@ header .site-branding #logo {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 136, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 #site-navigation ul li a:hover .nav_first_thumb {
   opacity: 0;
 }
-/* line 139, ../sass/main.scss */
+/* line 178, ../sass/main.scss */
 #site-navigation ul li a:hover .nav_hover_thumb {
   opacity: 1;
 }
 
 /********** CONTENT **********/
-/* line 151, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 #content .site-main.main_with_sidebar {
   width: 500px;
 }
 
-/* line 156, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 #panel {
   width: 232px;
   background: #F1F1F7;
   margin-top: 28px;
 }
-/* line 160, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 #panel h1 {
   padding-top: 0;
 }
-/* line 163, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 #panel #home-susbcribe {
   margin-bottom: 20px;
 }
-/* line 165, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 #panel #home-susbcribe img {
   width: 30%;
   margin-right: 5%;
 }
-/* line 169, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 #panel #home-susbcribe span {
   display: block;
   width: 65%;
 }
-/* line 174, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
 #panel #latest-releases-list {
   margin-left: 0;
   margin-top: 20px;
 }
-/* line 177, ../sass/main.scss */
+/* line 216, ../sass/main.scss */
 #panel #latest-releases-list li {
   list-style-type: none;
   border-top: 3px solid #031F73;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-/* line 182, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 #panel #latest-releases-list li .news_title {
   margin-bottom: 0;
 }
-/* line 185, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 #panel #latest-releases-list li .attachment {
   margin-top: 0.5em;
   display: block;
 }
-/* line 187, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 #panel #latest-releases-list li.rss img {
   margin-right: 10px;
   padding-top: 6px;
 }
-/* line 194, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 #panel.release_years {
   color: white;
   background: none;
 }
-/* line 197, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 #panel.release_years h4 {
   padding-left: 32px;
   padding-top: 2px;
@@ -310,51 +373,77 @@ header .site-branding #logo {
   margin-bottom: 2px;
   background: #BCBEC0;
 }
-/* line 204, ../sass/main.scss */
+/* line 243, ../sass/main.scss */
 #panel.release_years h4 a {
   display: block;
 }
-/* line 206, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 #panel.release_years h4 a:visited {
   color: white;
 }
-/* line 209, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 #panel.release_years h4 a:hover {
   opacity: 0.6;
 }
-/* line 213, ../sass/main.scss */
+/* line 252, ../sass/main.scss */
 #panel.release_years h4.active {
   background: #031F73;
 }
+/* line 258, ../sass/main.scss */
+#panel.release_years.english .english, #panel.release_years.portuguese .portuguese, #panel.release_years.mandarin .mandarin {
+  background: #031F73;
+}
+/* line 262, ../sass/main.scss */
+#panel.autostart {
+  background: none;
+}
 
-/* line 219, ../sass/main.scss */
+/* line 266, ../sass/main.scss */
 #people, #products {
   margin-top: 3em;
 }
-/* line 221, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 #people .person, #products .person {
   border-bottom: 1px solid #999;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
 
-/* line 227, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 #releases {
   margin-top: 3em;
 }
-/* line 229, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 #releases .release {
   background: #F1F1F7;
   margin-bottom: 1em;
 }
-/* line 232, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 #releases .release .attachment {
   margin-top: 1em;
   display: block;
 }
 
+/* line 287, ../sass/main.scss */
+.page-template-template-autostart_technical-php #main ul {
+  margin: 0;
+  border-top: 3px solid #d52b1e;
+  padding-top: 1em;
+}
+/* line 291, ../sass/main.scss */
+.page-template-template-autostart_technical-php #main ul li {
+  list-style-type: none;
+  border-bottom: 3px solid #d52b1e;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+/* line 296, ../sass/main.scss */
+.page-template-template-autostart_technical-php #main ul li img {
+  border: 1px solid #d52b1e;
+}
+
 /********** FOOTER **********/
-/* line 240, ../sass/main.scss */
+/* line 305, ../sass/main.scss */
 .site-footer {
   padding-top: 0.5em;
   border-top: 5px solid #031F73;

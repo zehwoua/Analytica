@@ -271,7 +271,7 @@ function my_custom_post_buscards() {
 		'description'   => 'Holds our business cards and business card specific data',
 		'public'        => true,
 		'menu_position' => 5,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'categories' ),
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'categories', 'post-formats' ),
 		'rewrite' => array('slug' => 'buscards', 'with_front' => true),
 		'has_archive'   => true
 	);

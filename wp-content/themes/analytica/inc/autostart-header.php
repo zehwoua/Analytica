@@ -4,10 +4,10 @@
 	</div>
 	<div id="autostart_nav">
 		<ul class="clearfix">
-			<li><a href="<?php echo home_url(); ?>/autostart/">About</a></li>
-			<li><a href="<?php echo home_url(); ?>/autostart/videos/">Videos</a></li>
-			<li><a href="<?php echo home_url(); ?>/autostart/technical">Technical</a></li>
-			<li><a href="<?php echo home_url(); ?>/autostart/distributors">Distributors</a></li>
+			<li class="about"><a href="<?php echo home_url(); ?>/autostart/">About</a></li>
+			<li class="videos"><a href="<?php echo home_url(); ?>/autostart/videos/">Videos</a></li>
+			<li class="technical"><a href="<?php echo home_url(); ?>/autostart/technical">Technical</a></li>
+			<li class="distributors"><a href="<?php echo home_url(); ?>/autostart/distributors">Distributors</a></li>
 		</ul>
 	</div>
 </div><!--/#autostart_header-->

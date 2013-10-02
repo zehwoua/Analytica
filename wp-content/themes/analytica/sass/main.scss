@@ -134,11 +134,19 @@ header{
 			}
 		}
 	}
-	.as_videos{
+	.as_videos,.video{
 		margin-top: 10px;
 	}
 }
-
+body.page-template-template-autostart_index-php #autostart_nav li.about,
+body.page-template-template-autostart_videos-php #autostart_nav li.videos,
+body.page-template-template-autostart_technical-php #autostart_nav li.technical,
+body.page-template-template-autostart_distributors-php #autostart_nav li.distributors{
+	a{
+		background: #EC1C24 !important;
+		color: white !important;
+	}
+}
 /********** SITE NAVIGATION **********/
 #site-navigation{
 	margin-top: 15px;
@@ -189,7 +197,8 @@ body.page-template-template-about-us-php #site-navigation li.about-us,
 body.post-type-archive-analytica_people #site-navigation li.people,
 body.post-type-archive-analytica_products #site-navigation li.products,
 body.post-type-archive-analytica_releases #site-navigation li.releases,
-body.page-template-template-contact-us-php #site-navigation li.contact-us{
+body.page-template-template-contact-us-php #site-navigation li.contact-us,
+body.single-analytica_products #site-navigation li.products{
 	span{
 		background: #EC1C24;
 		color: white;
@@ -239,7 +248,10 @@ body.page-template-template-contact-us-php #site-navigation li.contact-us{
 			.news_title{
 				margin-bottom: 0;
 			}
-			.attachment{margin-top: 0.5em;display: block;}
+			.attachment{
+				margin-bottom: 0;
+				display: block;
+			}
 			&.rss{
 				img{
 					margin-right: 10px;
@@ -327,6 +339,11 @@ body.page-template-template-contact-us-php #site-navigation li.contact-us{
 		.first_row{
 			width: 120px;
 		}
+	}
+}
+.autostart_videos{
+	.video{
+		display: none;
 	}
 }
 /********** FOOTER **********/
